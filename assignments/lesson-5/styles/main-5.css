@@ -1,0 +1,111 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+    font-family: roboto, geneva, sans-serif
+}
+
+.footer-bar {
+    font-size: 12px;
+}
+h1, h2, h3, aside {font-family: egyptian slate std, georgia; }
+
+header, nav, main, footer {text-align: center;
+    @media only screen and (min-width: 37.5em)/* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {margin:1.25rem;
+        padding:.8rem;
+        text-align: auto;
+        }
+
+header h1 { margin: .5rem;
+            padding: .1rem;
+            font-size: 40px}
+
+header img {
+    margin: 0 0 .2rem 2%;
+    max-width: 100%;
+    height: auto;
+    float: left;}
+
+header .subheading {text-align: center;
+margin: .5rem auto;
+    padding: .1rem;}
+
+nav {align-content: stretch;
+    }
+nav button {
+            }
+nav ul {list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        }
+nav ul li {
+           display: inline; 
+}
+nav ul li a {
+            display:block;
+                        }
+nav ul li.active a {}
+nav ul li a:hover {}
+
+h3 {font-size: 24px;}
+
+main {text-align: center;
+}
+
+main h2 {text-align: center;
+font-size: 33px;}
+
+main figure { margin: 0 0 .2rem 2%; 
+   }
+
+main figure img { max-width: 100%;
+                }
+
+article {}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 3px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+th {
+    background-color: orange;
+}
+
+.forecast {display: none;0
+}
+
+.sun {
+    margin:auto;
+    max-width: 100%;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  max-width: 100%; /* fill the page in the small/phone view */
+  margin: auto;
+}
+
+footer {text-align: center;}
+footer aside {margin:0;
+            padding:.5rem;
+                background-color: #4ecdc4; }
+footer>p {
+            background-color: #114e74;
+            margin: 0;
+            padding: 1rem;
+            color: white;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
