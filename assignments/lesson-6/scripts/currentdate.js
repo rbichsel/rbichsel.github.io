@@ -1,7 +1,6 @@
 var d = new Date();
-var day = d.getDay();
-var day2 = ["Sunday", "Monday", "Wednesday", "Thrusday", "Friday", "Saturday"];
-var days = day2[d.getDay()];
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+var dayname = days[d.getDay()];
 
 var date = d.getDate();
 
@@ -9,7 +8,8 @@ var mon = ["January", "February", "March", "April", "May", "June", "July", "Augu
 var month = mon[d.getMonth()];
 
 var year = d.getFullYear();
-console.log(year);
+console.log(dayname);
 
-final = days + ', ' + date + ' ' + month + ' ' + year;
+final = dayname + ', ' + date + ' ' + month + ' ' + year;
+
 document.getElementById("currentdate").innerHTML = final;

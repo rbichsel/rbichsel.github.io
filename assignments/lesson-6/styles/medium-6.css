@@ -1,7 +1,6 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 37.5em max-width: 64em) {
 
     header {
-        text-align: auto;
     }
     
     nav {
