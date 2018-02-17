@@ -12,16 +12,16 @@
 
     header img {
         float: none;
-        width: 9em;
-        margin-right: 450px;
+        width: 7em;
+        margin-right: 500px;
     }
 
     header h1 {
         text-align: center;
-        font-size: 4em;
+        font-size: 3.5em;
         margin-top: -100px;
         padding: 0;
-        margin-bottom: 0;
+        margin-bottom: 1rm;
         line-height: .8em;
     }
 
@@ -32,5 +32,7 @@
         padding-left: 3.5em;
     }
     
-    nav ul li a {padding: .6rem 1rem;}
+    
+    }
+    nav ul li a {padding: .7rem 3rem;}
 }
