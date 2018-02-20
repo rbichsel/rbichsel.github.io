@@ -32,7 +32,47 @@
         padding-left: 3.5em;
     }
     
+    .highlow,
+    .conditions {
+        float: left;
+        width: 20%;
+        margin-left:30%;
+        margin-right: 0;
+    }
+
+    .current {
+        float: right;
+        margin-right: 30%;
+        max-width: 80%;
+        padding: .5em;
+    }
+    
+    .article-pic {
+        width: 50%;
+        float: left;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    
+    nav ul {
+        padding: .5em;
+        text-align: center;
+        width: 100%;
+        display:inherit;
+    }
+     nav ul li a {
+        display:block;
+        padding: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 100%;
+         font-size: 1em;
+
+    }
+    
     
     }
     nav ul li a {padding: .7rem 3rem;}
+
+
 }

@@ -65,7 +65,7 @@ header .subheading {
 
 nav {
     align-content: stretch;
-    background-color: grey;
+    background-color:  #114e74;
 }
 
 nav button {
@@ -86,6 +86,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    font-size: 14px;
 }
 
 nav ul li a {
@@ -93,15 +94,17 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     border-top: 1px solid rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
 nav ul li.active a {
     background-color: rgba(0, 0, 0, 0.4);
-    color: #fff;
+    color: white;
 }
 
 nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.4);
+    color: orange;
 }
 
 nav ul.hide {
@@ -151,9 +154,10 @@ th {
     display: none;
 }
 
-.sun {
+.current {
     margin: auto;
-    max-width: 100%;
+   
+    max-width: 60%;
 }
 
 article p.town-article img {
@@ -162,6 +166,7 @@ article p.town-article img {
     /* fill the page in the small/phone view */
     margin: auto;
 }
+
 
 footer {
     text-align: center;
@@ -187,6 +192,3 @@ footer > p {
 }
 
 
-/* This structure refers to p elements that are direct children of the footer element */
-
-/* Other Class Selectors */

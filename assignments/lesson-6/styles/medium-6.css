@@ -5,44 +5,50 @@
     
     nav {
         margin: 1rem;
-        padding: .25rem;
+        padding: 0;
         background-color: #114e74;
         width: auto;
         
     }
 
     nav ul {
-        margin-left: 2%;
         display:inherit;
     }
 
     nav ul li a {
         display: block;
         padding: .8rem 1rem;
-        border-right: 1px solid rgba(0, 0, 0, 0.3);
         color: white;
-
     }
 
     nav ul li {
         display: inline-block;
+        width: 15%;
+        margin-right:auto;
+        margin-left: auto;
+        
     }
-    /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    
     nav .hamburger {
         display: none;
     }
-    /* hamburger button does not need to be shown */
+   
     .highlow,
     .conditions {
         float: left;
         width: 45%;
+        margin-left:%;
     }
 
     .current {
         float: right;
-        margin-right: 20%
+        margin-right: 15%;
+        max-width: 80%;
+        padding: .5em;
     }
-
+    .currentweather {
+    margin-right: 2.5em;
+    }
 
 
     section.forecast {
