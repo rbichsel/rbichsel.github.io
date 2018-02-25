@@ -11,17 +11,17 @@
     }
 
     nav ul {
-        display: inherit;
+        display: inline-flex;
     }
 
     nav ul li a {
-        display: block;
+        display: flex;
         padding: .8rem 1rem;
         color: white;
     }
 
     nav ul li {
-        display: inline-block;
+        display: flex;
         width: 15%;
         margin-right: auto;
         margin-left: auto;
