@@ -1,8 +1,8 @@
-function toggleHam() {
+function toggleMenu() {
 
     console.log("Test");
 
-    if (document.getElementById("navigation").style.display == "inherit")
+    if (document.getElementById("navigation").style.display == "flex")
 
     {
         console.log("Test2");
@@ -10,6 +10,6 @@ function toggleHam() {
     }
     
     else 
-      document.getElementById("navigation").style.display = "inherit";  
+      document.getElementById("navigation").style.display = "flex";  
 
 }

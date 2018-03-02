@@ -49,26 +49,24 @@ header .flex-item2 {
 }
 /*****Navigation******/
 
+
 nav {
     
     align-content: stretch;
     background-color:  #114e74;
 }
 
-.hamburger {
-    display: block;
-    position: absolute;
-    top: 10.5rem;
-    right: 1.25rem;
+#navigation {
+    display: none;
 }
 
-#navigation {
+nav ul {
     display:flex;
     flex-direction: column;
 }
 
 
-nav button {
+.hamburger {
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
@@ -76,13 +74,6 @@ nav button {
     color: #555;
 }
 
-.show-nav {
-    display: flex;
-}
-
-.hide-nav {
-    display:none;
-}
 
 nav ul {
     list-style-type: none;

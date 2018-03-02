@@ -1,33 +1,32 @@
 @media only screen and (min-width: 37.5em) {
 
-
-
+    
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
     nav {
         margin: 1rem;
-        padding: 0;
+        padding: .3em;
         background-color: #114e74;
         width: auto;
-
+        
     }
 
-    nav ul {
-        display: inline-flex;
-    }
 
+    nav ul li {
+        width: 100%;
+
+    }
     nav ul li a {
-        padding: .8rem 1rem;
+        padding: .3rem 2%;
         color: white;
     }
 
-    nav ul li {
-        display: inline-flex;
-        width: 15%;
-        margin-right: auto;
-        margin-left: auto;
-
-    }
-
-    nav .hamburger {
+    .hamburger {
         display: none;
     }
 
@@ -35,7 +34,7 @@
     .summary {
         display: flex;
         align-items: center;
-       margin-right: 10%;
+        margin-right: 10%;
     }
 
     .highlow {

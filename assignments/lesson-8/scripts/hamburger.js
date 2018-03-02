@@ -1,13 +1,17 @@
-function toggleMenu() {
-    var x = document.getElementById("navigation");
 
-    if (x.classList == "show-nav") {
-        x.classList.remove("show-nav");
-        x.classList.add("hide-nav");
-        
-    } else if (x.classList == "hide-nav") {
-        x.classList.remove("hide-nav");
-        x.classList.add("show-nav");
+function toggleMenu() {
+
+    console.log("Test");
+
+    if (document.getElementById("navigation").style.display == "flex")
+
+    {
+        console.log("Test2");
+        document.getElementById("navigation").style.display = "none";
     }
+    
+    else 
+      document.getElementById("navigation").style.display = "flex";  
 
 }
+

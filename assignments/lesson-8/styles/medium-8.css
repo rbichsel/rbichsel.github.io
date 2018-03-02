@@ -1,28 +1,23 @@
 @media only screen and (min-width: 37.5em) {
 
-
-    .hide-nav {
+    
+    #navigation {
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     
     nav {
         margin: 1rem;
-        padding: 0;
+        padding: .3em;
         background-color: #114e74;
         width: auto;
-
-    }
-
-
-    #navigation {
-        flex-direction: row;
+        
     }
 
 
     nav ul li {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
 
     }
@@ -31,7 +26,7 @@
         color: white;
     }
 
-    nav .hamburger {
+    .hamburger {
         display: none;
     }
 
