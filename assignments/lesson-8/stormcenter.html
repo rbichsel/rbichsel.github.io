@@ -33,8 +33,9 @@
         </div>
 
     </header>
+    
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
     <nav>
-        <button class="hamburger" onclick="toggleHam()">&#9776;</button>
         <ul id="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="franklin-8.html">Franklin</a></li>
@@ -49,24 +50,58 @@
     <main>
         <h2>Storm Center</h2>
         <form action="" method="post" enctype="multipart/form-data" name="submitinfo" id="sCenter">
-            <field>
-                <legend><span>Storm Information</span></legend>
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
 
-                <label><span>Storm Date:</span><input name="date" type="date" value="" pattern="[a-zA-z -._]{3,50}" required></label>
+                <label><span>Full Name <abbr title="This field is mandatory">*</abbr>:</span><input name="name" type="text" value="" placeholder="John Doe" pattern="[a-zA-z -._]{3,50}" required></label>
 
                 <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com"></label>
 
-                <label><span>Phone:</span><input name="phone" type="tell"></label>
+                <label><span>Phone:</span><input name="phone" type="tell" placeholder="5554445555" pattern="[0-9]{10, 20}"></label>
 
-                <label><span>Zip Code:</span><input name="zipcode" type="number" value="" placeholder="83402" pattern="[0-9]{5}" required></label>
+                <label><span>Zip Code <abbr title="This field is mandatory">*</abbr>:</span><input name="zipcode" type="number" value="" placeholder="83402" pattern="[0-9]{5}" required></label>
 
-            </field>
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Storm Information</span></legend>
 
 
-            <input type="submit" value="Submit" class="submitBtn">
+                <label><span>Storm Type</span><input list="storm-types"></label>
 
-            <input type="hidden" value="Conference Registration" name="subject">
-            <input name="redirect" type="hidden" value="thanks.html">
+                <datalist id="storm-types">
+                    <option value="Rain"></option>
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Tornado"></option>
+                    <option value="Snow"></option>
+                    <option value="Lighning"></option> 
+            </datalist>
+
+                <label><span>Storm Severity: </span><input type="range" name="severity" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="severityvalue">5</span><br></label>
+
+                <label><span>User in-Danger Level</span><input name="danger" type="radio" value="Yes"> Yes <br>
+                <input name="danger" type="radio" value="No">No <br>
+                <input name="danger" type="radio" value="Maybe">Maybe <br></label>
+                
+                <label><span>Storm Region</span>
+                <select name="region">
+                <option value="select" disabled>Select Region...</option>
+                    <option value="region">Franklin</option>
+                    <option value="region">Greenville</option>
+                    <option value="region">Springfield</option>
+                    </select></label>
+
+            </fieldset>
+            
+            <label><span>Additional Information or Comments</span>
+                <textarea name="comments" rows="10" cols="40"></textarea></label>
+        
+
+            <input type="submit" name="submit" value="Submit" class="submitBtn">
+            <input type="hidden" name="redirect"  value="thanks.html">
 
         </form>
     </main>
@@ -80,6 +115,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/storm-severity.js"></script>
 </body>
 
 </html>
