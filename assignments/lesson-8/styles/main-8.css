@@ -5,7 +5,7 @@
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
-html {background-color: #b3e5fc;}
+html {background-color:;}
 
 body {
     font-size: 16px;
@@ -36,8 +36,9 @@ footer {
 header {
     display: flex;
     justify-content: flex-start;
-    margin: 1.25rem;
+    margin: 0;
     padding: .8rem;
+    background-color: #4ecdc4;
 
 }
 

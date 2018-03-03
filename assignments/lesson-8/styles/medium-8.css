@@ -9,7 +9,7 @@
     }
     
     nav {
-        margin: 1rem;
+        margin: 0;
         padding: .3em;
         background-color: #114e74;
         width: auto;
@@ -99,5 +99,10 @@
 
     .grid-container > li {
         flex: 1;
+    }
+    /*****Storm Center*******/
+    
+    textarea {
+        text-align: left;
     }
 }
