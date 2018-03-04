@@ -2,12 +2,13 @@
 
 * {
     box-sizing: border-box;
+    max-width: 
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
 html {background-color:;}
 
-body {
+body, input.submitBtn {
     font-size: 16px;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -29,14 +30,15 @@ nav,
 main,
 footer {
     text-align: center;
+    margin: 2em;
     @media only screen and (min-width: 37.5em)/* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {
     display: flex;
-    justify-content: flex-start;
-    margin: 0;
+    justify-content: center;
+    /*margin: 1em;*/
     padding: .8rem;
     background-color: #4ecdc4;
 
@@ -56,7 +58,6 @@ nav {
 
     align-content: stretch;
     background-color:  #114e74;
-    min-width: 100%;
 }
 
 #navigation {
@@ -198,13 +199,15 @@ fieldset{
   background-color: white;
     border-radius: .8em;
     margin: 1.5em 0;
-    border: #917a56 solid 1px; 
+    border: black solid 2px; 
     text-align: left;
-    width: 80%;
+    max-width: 80%;
+    
 }
 
 legend {
     color: black;
+    font-weight: bold;
     margin-left: 6%;
     padding: .3em;
     border: #114e74 solid 5px;
@@ -232,11 +235,23 @@ input.submitBtn {
     border: solid 1px #111;
     border-radius: 7px;
     width: 20%;
-    margin: .5em 0;
+    margin: .5em 0 1em;
     font-size: 1em;
     padding: .6em;
-    background: #7d2a35;
+    background-color: orangered;
     box-shadow: 4px 4px 10px #666;
+    display: flex;
+    justify-content: center;
+    
 }
 
+textarea{
+    margin: 1em;
+}
+
+/*****Thanks*****/
+.formsubmit {
+    display: flex;
+    height: 400px; 
+}
 

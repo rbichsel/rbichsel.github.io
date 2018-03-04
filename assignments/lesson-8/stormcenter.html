@@ -33,7 +33,7 @@
         </div>
 
     </header>
-    
+
     <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
     <nav>
         <ul id="navigation">
@@ -49,7 +49,7 @@
 
     <main>
         <h2>Storm Center</h2>
-        <form action="thanks.html" method="post" name="submitinfo" id="sCenter">
+        <form action="thanks.html">
             <fieldset>
                 <legend><span>Personal Information</span></legend>
 
@@ -85,7 +85,7 @@
                 <label><span>User in-Danger Level</span><input name="danger" type="radio" value="Yes"> Yes <br>
                 <input name="danger" type="radio" value="No">No <br>
                 <input name="danger" type="radio" value="Maybe">Maybe <br></label>
-                
+
                 <label><span>Storm Region</span>
                 <select name="region">
                 <option value="select" disabled>Select Region...</option>
@@ -95,13 +95,14 @@
                     </select></label>
 
             </fieldset>
-            
-            <label><span>Additional Information or Comments</span>
-                <textarea name="comments" rows="10" cols="40"></textarea></label>
-        
+
+            <fieldset>
+                <legend><span>Additional Information or Comments</span></legend>
+                <textarea name="comments" rows="10" cols="40"></textarea>
+            </fieldset>
 
             <input type="submit" name="submit" value="Submit" class="submitBtn">
-            <input type="hidden" name="redirect"  value="thanks.html">
+            <input type="hidden" name="redirect" value="thanks.html">
 
         </form>
     </main>

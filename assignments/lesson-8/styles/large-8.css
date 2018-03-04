@@ -73,6 +73,9 @@
         box-shadow: 5px 5px 10px gray;
     }
 
-
+/******Storm Center******/
+    form {
+        max-width: 70%;
+    }
 
 }
