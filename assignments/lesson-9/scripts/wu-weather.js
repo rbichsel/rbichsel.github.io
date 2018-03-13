@@ -1,4 +1,6 @@
 var requestURL = 'http://api.wunderground.com/api/2bd3e0c1308e8f04/conditions/q/MN/Franklin.json';
+/** to do both in one, combine in URL http://api.wunderground.com/api/...API key.../conditions/forecast/q/MN/Franklin.json **/
+
 
 var request = new XMLHttpRequest();
 

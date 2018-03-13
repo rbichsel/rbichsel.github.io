@@ -264,6 +264,10 @@ textarea{
 
 /*****Home Page******/
 
+#town-article img {
+        width: 100%;
+    }
+
 #town-info {
     display: flex;
     flex-direction: column;
@@ -306,6 +310,11 @@ margin-bottom: 2em;
 #town-info h4 {
     margin-bottom: .5em;
 }
+
+#town-info img {
+    margin-bottom: 3%;
+}
+
 
 /**#town-article img {
     width: 33%;

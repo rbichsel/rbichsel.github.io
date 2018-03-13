@@ -87,13 +87,14 @@
 
     }
 
-    #town-article img {
-        width: 33%;
-    }
+    
 
     #town-info article {
         width: 33%;
         margin: .8em;
     }
-
+#town-info img {
+    max-width: 100%;
+    margin-left: 8%;
+}
 }

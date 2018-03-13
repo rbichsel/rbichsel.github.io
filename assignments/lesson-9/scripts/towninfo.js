@@ -28,7 +28,7 @@ var section = document.getElementById("town-info");
                 var myPara4 = document.createElement('p');
                 var myH4 = document.createElement("h4");
                 var myList = document.createElement('ul');
-                var myImg = /**document.createElement('img');**/
+                var myImg = document.createElement('img');
                 
                 myH3.classList.add("t-name");
             
@@ -40,7 +40,7 @@ var section = document.getElementById("town-info");
                 myPara4.textContent = 'Average Rainfall: ' + mnTowns[i].averageRainfall;
                 myH4.textContent = 'Events';
                 
-                /**myImg.src = "images/" + mnTowns[i].name + ".jpg";**/
+                myImg.src = "images/" + mnTowns[i].name + ".jpg";
                 
                 
 
@@ -59,7 +59,7 @@ var section = document.getElementById("town-info");
                 myArticle.appendChild(myH4); 
 
                 myArticle.appendChild(myList);
-                /**myArticle.appendChild(myImg);**/
+                myArticle.appendChild(myImg);
                 section.appendChild(myArticle);
             }
         }

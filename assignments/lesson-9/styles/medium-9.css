@@ -110,18 +110,19 @@
     /*****Home Page******/
     #town-info {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-around;
         text-align: left;
 
     }
 
-    #town-article img {
-        width: 33%;
+    #town-info img { 
+     max-width: 90%;
+    margin-left: 5%;
     }
 
     #town-info article {
-        width: 100%;
+        width: 33%;
         margin: .8em;
     }
 
