@@ -16,7 +16,7 @@ request.onload = function () {
     console.log(franklinWeather);
 
     document.getElementById('cweather').innerHTML = franklinWeather.current_observation.weather;
-    
+
     document.getElementById('ctemp').innerHTML = franklinWeather.current_observation.temp_f;
     document.getElementById('wind').innerHTML = franklinWeather.current_observation.wind_mph;
     document.getElementById('w_icon').src = franklinWeather.current_observation.icon_url;
