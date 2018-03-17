@@ -1,4 +1,4 @@
-var requestURL = '//api.wunderground.com/api/2bd3e0c1308e8f04/conditions/q/MN/Franklin.json';
+var requestURL = '//api.wunderground.com/api/2bd3e0c1308e8f04/conditions/q/OR/Springfield.json';
 /** to do both in one, combine in URL http://api.wunderground.com/api/...API key.../conditions/forecast/q/MN/Franklin.json **/
 
 
@@ -36,7 +36,7 @@ request.onload = function () {
 
 var requestSec = new XMLHttpRequest();
 
-requestSec.open('GET', '//api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/MN/Franklin.json', true);
+requestSec.open('GET', '//api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/OR/Springfield.json', true);
 requestSec.send();
 
 requestSec.onload = function () {
