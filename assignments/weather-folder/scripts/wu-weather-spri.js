@@ -3,12 +3,8 @@ var requestURL = '//api.wunderground.com/api/2bd3e0c1308e8f04/conditions/q/OR/Sp
 
 
 var request = new XMLHttpRequest();
-
-
 request.open('GET', requestURL, true);
 request.send();
-
-
 
 request.onload = function () {
 

@@ -18,7 +18,6 @@ request.onload = function () {
     document.getElementById('cweather2').innerHTML = franklinWeather.current_observation.weather;
 
     document.getElementById('ctemp2').innerHTML = franklinWeather.current_observation.temp_f;
-
     document.getElementById('wind2').innerHTML = franklinWeather.current_observation.wind_mph;
     document.getElementById('w_icon2').src = franklinWeather.current_observation.icon_url;
 
@@ -37,13 +36,14 @@ request.onload = function () {
 
 var requestSec = new XMLHttpRequest();
 
-requestSec.open('GET', '//api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/MN/Franklin.json', true);
+requestSec.open('GET', '//api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/TX/Greenville.json', true);
 requestSec.send();
 
 requestSec.onload = function () {
 
     var franklinForecast = JSON.parse(requestSec.responseText);
     console.log(franklinForecast);
-    document.getElementById('forecastInfo2').innerHTML = franklinForecast.forecast.txt_forecast.forecastday["0"].fcttext;
+    document.getElementById('forecastInfo').innerHTML = franklinForecast.forecast.txt_forecast.forecastday["0"].fcttext;
 
 }
+
