@@ -16,12 +16,9 @@ request.onload = function () {
     console.log(franklinWeather);
 
     document.getElementById('cweather').innerHTML = franklinWeather.current_observation.weather;
-
+    
     document.getElementById('ctemp').innerHTML = franklinWeather.current_observation.temp_f;
-
     document.getElementById('wind').innerHTML = franklinWeather.current_observation.wind_mph;
-
-
     document.getElementById('w_icon').src = franklinWeather.current_observation.icon_url;
 
     var icon_path = request.current_observation.icon_url;
@@ -36,10 +33,10 @@ request.onload = function () {
     document.getElementById('w_icon').src = icon_path;
 }
 
-    
+
 var requestSec = new XMLHttpRequest();
 
-requestSec.open('GET', 'http://api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/MN/Franklin.json', true);
+requestSec.open('GET', '//api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/MN/Franklin.json', true);
 requestSec.send();
 
 requestSec.onload = function () {
