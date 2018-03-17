@@ -20,10 +20,18 @@ request.onload = function () {
     document.getElementById('ctemp2').innerHTML = franklinWeather.current_observation.temp_f;
 
     document.getElementById('wind2').innerHTML = franklinWeather.current_observation.wind_mph;
-
-
     document.getElementById('w_icon2').src = franklinWeather.current_observation.icon_url;
 
+    var icon_path = franklinWeather.current_observation.icon_url;
+    var urlString = document.location.href;
+    console.log(urlString);
+    var found = urlString.indexOf("https");
+    console.log(found);
+
+    if (found >= 0) {
+        icon_path = icon_path.replace("http", "https");
+    }
+    document.getElementById('w_icon2').src = icon_path;
 }
 
 
