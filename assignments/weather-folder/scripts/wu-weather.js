@@ -33,9 +33,10 @@ request.onload = function () {
     if (found >= 0) {
         icon_path = icon_path.replace("http", "https");
     }
+    document.getElementById('w_icon').src = icon_path;
 }
 
-    document.getElementById('w_icon').src = icon_path;
+    
 var requestSec = new XMLHttpRequest();
 
 requestSec.open('GET', 'http://api.wunderground.com/api/2bd3e0c1308e8f04/forecast/q/MN/Franklin.json', true);
