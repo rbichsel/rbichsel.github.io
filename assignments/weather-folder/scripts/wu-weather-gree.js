@@ -15,11 +15,11 @@ request.onload = function () {
     var franklinWeather = JSON.parse(request.responseText);
     console.log(franklinWeather);
 
-    document.getElementById('cweather2').innerHTML = franklinWeather.current_observation.weather;
+    document.getElementById('cweather').innerHTML = franklinWeather.current_observation.weather;
 
-    document.getElementById('ctemp2').innerHTML = franklinWeather.current_observation.temp_f;
-    document.getElementById('wind2').innerHTML = franklinWeather.current_observation.wind_mph;
-    document.getElementById('w_icon2').src = franklinWeather.current_observation.icon_url;
+    document.getElementById('ctemp').innerHTML = franklinWeather.current_observation.temp_f;
+    document.getElementById('wind').innerHTML = franklinWeather.current_observation.wind_mph;
+    document.getElementById('w_icon').src = franklinWeather.current_observation.icon_url;
 
     var icon_path = franklinWeather.current_observation.icon_url;
     var urlString = document.location.href;
@@ -30,7 +30,7 @@ request.onload = function () {
     if (found >= 0) {
         icon_path = icon_path.replace("http", "https");
     }
-    document.getElementById('w_icon2').src = icon_path;
+    document.getElementById('w_icon').src = icon_path;
 }
 
 
