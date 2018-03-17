@@ -15,6 +15,10 @@
     h1 {
         font-size: 45px;
     }
+    
+    .bannerpic {
+        margin: auto; 
+    }
     article p.town-article img {
         width: 29.333%;
     }
