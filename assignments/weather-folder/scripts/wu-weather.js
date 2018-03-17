@@ -21,7 +21,7 @@ request.onload = function () {
     document.getElementById('wind').innerHTML = franklinWeather.current_observation.wind_mph;
     document.getElementById('w_icon').src = franklinWeather.current_observation.icon_url;
 
-    var icon_path = request.current_observation.icon_url;
+    var icon_path = franklinWeather.current_observation.icon_url;
     var urlString = document.location.href;
     console.log(urlString);
     var found = urlString.indexOf("https");
