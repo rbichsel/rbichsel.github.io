@@ -2,11 +2,10 @@
 
 * {
     box-sizing: border-box;
-    max-width: 
+    max-width: 100%;
 }
 
 /* This wildcard applies to all elements ensuring a box layout model */
-html {background-color:;}
 
 body, input.submitBtn {
     font-size: 16px;
@@ -31,8 +30,6 @@ main,
 footer {
     text-align: center;
     margin: 2em;
-    @media only screen and (min-width: 37.5em)/* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 }
 
 header {
@@ -62,13 +59,8 @@ nav {
 
 #navigation {
     display: none;
-}
-
-nav ul {
-    display:flex;
     flex-direction: column;
 }
-
 
 .hamburger {
     margin: .2rem 2%;
