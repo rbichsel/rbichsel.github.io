@@ -5,7 +5,8 @@
         padding-right: 20%;
     }
     header .flex-item1 {
-        flex: 1;
+        flex: 3;
+        
     }
 
     header .flex-item2 {

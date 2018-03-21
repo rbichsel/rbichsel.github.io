@@ -1,6 +1,11 @@
 @media only screen and (min-width: 37.5em) {
 
-
+header .flex-item1 {
+        flex: 3;
+        padding-right: 1.8%;
+        
+    }
+    
     nav ul {
         display: flex;
         flex-direction: row;
