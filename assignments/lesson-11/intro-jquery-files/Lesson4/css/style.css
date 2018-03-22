@@ -257,14 +257,13 @@ body {
 	font-family: 'Raleway', sans-serif;
 }
 
-.footer {
+footer {
 	position:relative;
-	height:30px;
+    margin-top: 60px;
 	background:rgba(0, 167, 255, 0.86);
 }
 
-.footer h5 {
-	position: absolute;
+footer h5 {
 	top: 8px;
 	left: 7px;
 	font-family: 'Raleway', sans-serif;
@@ -272,10 +271,13 @@ body {
 	color: rgba(0,0,0,0.8);
 }
 
-.footer a {
+footer a {
+    font-size: 14px;
 	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
 }
+
+
 
 
