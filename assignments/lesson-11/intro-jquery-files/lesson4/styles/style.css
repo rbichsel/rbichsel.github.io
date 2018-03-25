@@ -273,11 +273,14 @@ footer h5 {
 
 footer a {
     font-size: 14px;
-	text-decoration: none;
 	font-weight: normal;
 	color:inherit;
 }
-
+footer ol {
+    font-size: 12px; 
+    display: flex;
+    justify-content:space-around;
+}
 
 
 
