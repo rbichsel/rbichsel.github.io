@@ -1,0 +1,67 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+   
+
+    header .flex-item2 {
+        justify-content: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    
+    .bannerpic {
+        margin: auto; 
+    }
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    .summary {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .highlow {
+        flex: 1;
+    }
+    .conditions {
+        flex: 2;
+    }
+    .current {
+        flex: 2;
+        max-width: 80%;
+        padding: .5em;
+    }
+
+
+    nav ul {
+        text-align: center;
+        width: 100%;
+        display: inherit;
+    }
+    nav ul li a {
+        display: block;
+        padding: 0;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        color: white;
+        width: 100%;
+        font-size: 1em;
+
+    }
+    nav ul li a {
+        padding: .7rem 3rem;
+    }
+    .hamburger {
+        display: none;
+    }
+
+    .article-container {}
+
+    .town-article {
+        text-align: left;
+    }
+    
+     .article-pic {
+     
+    }
+    
+}

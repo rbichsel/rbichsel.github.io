@@ -1,0 +1,348 @@
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+body,
+input.submitBtn {
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer-bar {
+    font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+aside {
+    font-family: 'Stoke', serif;
+}
+
+
+nav,
+main,
+footer {
+    text-align: center;
+
+}
+
+main {
+    margin: 2em;
+}
+
+.bar {
+    height: 1em;
+    background-color: #69306d;
+}
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    background-color:;
+
+}
+
+#logo{
+    margin: 1em;
+}
+
+
+/*****Navigation******/
+
+.hamburger {
+    display: flex;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+nav {
+
+    align-content: stretch;
+    background-color: #69306d;
+    
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: flex;
+    padding: .9rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+
+nav ul li.active a {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: orange;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+h2,
+h3 {
+    font-size: 24px;
+}
+
+
+main h2 {
+    text-align: center;
+    font-size: 33px;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+}
+
+main figure img {
+    max-width: 100%;
+}
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 3px solid black;
+    padding: 10px;
+    margin: auto;
+}
+
+th {
+    background-color: orange;
+}
+
+.forecast {
+    display: none;
+}
+
+.current {
+    margin: auto;
+
+    max-width: 60%;
+}
+
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    max-width: 100%;
+    /* fill the page in the small/phone view */
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer aside {
+    margin: 0;
+    padding: .5rem;
+
+    background-color: #8d8d92;
+}
+
+footer > p {
+    background-color: #69306d;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/********Gallery Page**********/
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+}
+
+/********Storm Center*********/
+
+abbr {
+    color: red
+}
+
+fieldset {
+    background-color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: black solid 2px;
+    text-align: left;
+    max-width: 80%;
+
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    margin-left: 6%;
+    padding: .3em;
+    border: #114e74 solid 5px;
+    background-color: white;
+    border-radius: .7em;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: 1em;
+    color: black;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 20%;
+    margin: .5em 0 1em;
+    font-size: 1em;
+    padding: .6em;
+    background-color: orangered;
+    box-shadow: 4px 4px 10px #666;
+    display: flex;
+    justify-content: center;
+
+}
+
+textarea {
+    margin: 1em;
+}
+
+/*****Thanks*****/
+
+.formsubmit {
+    display: flex;
+    height: 400px;
+}
+
+/****JSON****/
+
+.t-photo {}
+
+/*****Home Page******/
+
+#town-article img {
+    width: 100%;
+}
+
+#town-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+}
+
+#town-info article {
+    width: 100%;
+    border: solid #114e74 4px;
+    margin-bottom: 2em;
+}
+
+#town-info h3 {
+    text-align: center;
+
+
+}
+
+.t-name {
+    color: #114e74;
+}
+
+#town-info p {
+
+    text-align: center;
+    margin: .6em;
+}
+
+#town-info h4 {
+    text-align: left;
+    margin-left: 1.2em;
+}
+
+#town-info ul {
+
+    text-align: left;
+    margin-top: 0;
+}
+
+#town-info h4 {
+    margin-bottom: .5em;
+}
+
+#town-info img {
+    margin-bottom: 3%;
+}
+
+
+.forecastFrank {
+    margin-top: 1em;
+}
+
+/**Sales**/
+#accordian ul { 
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+line-height: 1;
+position: relative;}
+
+#accordian {
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    color: white;
+    box-shadow: 5px 7px 5px grey;
+    
+
+}
+
+#accordian h3 {
+    font-size: 1.3em; 
+    cursor: pointer;
+}
+
+#accordian h3:hover{
+    color: navajowhite;
+}
+
+#accordian ul li {
+    background-color: green;
+    height: 50%;
+    border: 1px solid black;
+    
+}

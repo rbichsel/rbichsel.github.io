@@ -1,0 +1,42 @@
+@media only screen and (min-width: 37.5em) {
+
+    .hamburger {
+        display: none;
+    }
+
+    #navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+
+    }
+
+    nav ul.hide {
+        display: flex;
+    }
+
+    nav ul li a {
+        padding: .9rem; 
+
+    }
+
+    nav ul li {
+        
+    }
+    /********Sales*******/
+    .container2 {
+        display: flex; 
+    }
+    
+    #accordian {
+        width: 200%;
+        max-width: 300px;
+    }
+    
+
+    #salesInfo {padding: 1em;
+    text-align: left; }
+    
+
+}
