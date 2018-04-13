@@ -16,7 +16,7 @@ var section = document.getElementById("price1");
 
 
         function showInfo(jsonObj) {
-            var mnTowns = jsonObj['services'];
+            var mnTowns = jsonObj['towns'];
            
 
             for (var i = 0; i < mnTowns.length; i++) {
@@ -26,7 +26,7 @@ var section = document.getElementById("price1");
             
                 
                 
-                myPara1.textContent = 'Motto: ' + mnTowns[i].price;
+                myPara1.textContent = 'Motto: ' + mnTowns[i].motto;
                 
                 
 
