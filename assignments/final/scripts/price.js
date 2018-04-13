@@ -18,7 +18,8 @@ request.onload = function () {
 
 function showInfo(jsonObj) {
 
-
+    var mtPrice = jsonObj['services'];
+    
     document.getElementById('price1').innerHTML = services[0].price;
 
     /*for (var i = 0; i < mtPrice.length; i++) {
