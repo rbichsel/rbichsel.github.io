@@ -29,10 +29,10 @@ function showInfo(jsonObj) {
      var myPara4 = document.createElement('p');
         
 
-        myPara1.textContent = mnTowns[0].motto;
-    myPara2.textContent = mnTowns[1].motto;
-    myPara3.textContent = mnTowns[2].motto;
-    myPara4.textContent = mnTowns[3].motto;
+    myPara1.textContent = mnTowns[0].price;
+    myPara2.textContent = mnTowns[1].price;
+    myPara3.textContent = mnTowns[2].price;
+    myPara4.textContent = mnTowns[3].price;
         
 
         section.appendChild(myPara1);

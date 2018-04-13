@@ -2,7 +2,7 @@
   "services" : [
   {
     "name": "Franklin",
-    "motto": "$50",
+    "price": "$50",
     "yearFounded": 1788,
     "currentPopulation": 30458,
     "averageRainfall": 21,
@@ -14,7 +14,7 @@
   },
   {
     "name": "Greenville",
-    "motto": "$150",
+    "price": "$150",
     "yearFounded": "$150",
     "currentPopulation": 33458,
     "averageRainfall": 25,
@@ -28,7 +28,7 @@
 
   {
     "name": "Placerton",
-    "motto": "$50-300, depending on complexity",
+    "price": "$50-300, depending on complexity",
     "yearFounded": 1946,
     "currentPopulation": 512,
     "averageRainfall": 39,
