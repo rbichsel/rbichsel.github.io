@@ -91,8 +91,8 @@ nav ul li.active a {
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    color: olivedrab;
+    background-color: olivedrab;
+    color: white;
 }
 
 nav ul.hide {
@@ -172,6 +172,9 @@ footer > p {
     clear: both;
 }
 
+.video{
+    color: white; 
+}
 
 
 /**Sales**/
