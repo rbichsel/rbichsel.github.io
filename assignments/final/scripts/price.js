@@ -21,7 +21,7 @@ request.onload = function () {
 
 
 function showInfo(jsonObj) {
-    var mnTowns = jsonObj['towns'];
+    var mnTowns = jsonObj['services'];
  
         var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
@@ -32,7 +32,7 @@ function showInfo(jsonObj) {
         myPara1.textContent = mnTowns[0].motto;
     myPara2.textContent = mnTowns[1].motto;
     myPara3.textContent = mnTowns[2].motto;
-    myPara3.textContent = mnTowns[3].motto;
+    myPara4.textContent = mnTowns[3].motto;
         
 
         section.appendChild(myPara1);
