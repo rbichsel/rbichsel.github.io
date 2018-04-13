@@ -80,9 +80,9 @@
 .right, .left { padding-right:1em;
         padding-left: 1em;
         flex: 1;
-    margin: 1em;
-     margin-left: 9.5em;
-        margin-right: 9.5em;
+        margin: 1em;
+        margin-left: 5em;
+        margin-right: 5em;
     }
     
     /****Events****/
