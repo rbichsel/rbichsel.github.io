@@ -1,42 +1,65 @@
-var section = document.getElementById("prices");
+var section = document.getElementById("price1");
 
-var requestURL = 'https://rbichsel.github.io/assignments/final/scripts/services.json';
+        var requestURL = 'https://rbichsel.github.io/assignments/final/data/services.json';
+
+        var request = new XMLHttpRequest();
+
+        request.open('GET', requestURL);
+
+        request.responseType = 'json';
+        request.send();
+
+        request.onload = function() {
+            var townInfo = request.response;
+            showInfo(townInfo); 
+        }
 
 
-var request = new XMLHttpRequest();
+        function showInfo(jsonObj) {
+            var mnTowns = jsonObj['services'];
+            mnTowns.splice(2,1);
 
-request.open('GET', requestURL);
+            for (var i = 0; i < mnTowns.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH3 = document.createElement('h3');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+                var myH4 = document.createElement("h4");
+                var myList = document.createElement('ul');
+                var myImg = document.createElement('img');
+                
+                myH3.classList.add("t-name");
+            
+                
+                myH3.textContent = mnTowns[i].type;
+                myPara1.textContent = 'Motto: ' + mnTowns[i].details;
+                myPara2.textContent = 'Year Founded: ' + mnTowns[i].price;
+                myPara3.textContent = 'Current Population: ' + mnTowns[i].details;
+                myPara4.textContent = 'Average Rainfall: ' + mnTowns[i].details;
+                myH4.type = 'Events';
+                
+                
+                
+                
 
-request.responseType = 'json';
-request.send();
+                var townEvents = mnTowns[i].events;
+                for (var j = 0; j < townEvents.length; j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = townEvents[j];
+                    myList.appendChild(listItem);
+                }
 
-request.onload = function () {
-    var servPrices = request.response;
-    showInfo(servPrices);
-}
+                myArticle.appendChild(myH3);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myPara4);
+                myArticle.appendChild(myH4); 
 
-
-function showInfo(jsonObj) {
-
-    var mtPrice = jsonObj['services'];
-    
-    document.getElementById('price1').innerHTML = services[0].price;
-
-    /*for (var i = 0; i < mtPrice.length; i++) {
-        var p1 = document.getElementById('price1').innerHTML;
-        var p2 = document.getElementById('price2').innerHTML;
-        var p3 = document.getElementById('price3').innerHTML;
-        var p4 = document.getElementById('price4').innerHTML;
-
-        console.log(mtPrice[0].price);
-        
-        p1.textContent = mtPrice[i].price;
-        p2.textContent = mtPrice[i].price;
-        p3.textContent = mtPrice[i].price;
-        p4.textContent = mtPrice[i].price;
-        
-        myArticle.appendChild(p1);
-        section.appendChild(myArticle);
-
-    */
-}
+                myArticle.appendChild(myList);
+                myArticle.appendChild(myImg);
+                section.appendChild(myArticle);
+            }
+        }

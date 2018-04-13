@@ -3,27 +3,27 @@
   {
     "type": "Tire Repair",
     "details": "repair leaks in tires",
-    "price": "$50",
+    "price": "50 dollars",
     ]
   },
   {
       "type": "Handle Alignment",
     "details": "align crocked handles",
-    "price": "$150",
+    "price": "150 dollars",
     ]
   },
 
   {
     "type": "Paint Job",
     "details": "give your bike a fresh new look with a new paint job",
-    "price": "$50-300, depending on complexity",
+    "price": "50-300 dollars, depending on complexity",
     ]
   },
 
   {
     "type": "The Holy Grail",
     "details": "We will replace all old parts on your bike and make worthy for the gods",
-    "price": "$2000",
+    "price": "2000 dollars",
     ]
   }
  ]
