@@ -54,13 +54,15 @@
         display: none;
     }
 
-    .article-container {}
-
-    .town-article {
-        text-align: left;
+    .container1 {
+        display: flex;
+        padding-top: 1em;
+        
     }
     
-     .article-pic {
+    .reliableText {
+        padding: 1em;
+    }
      
     }
     /***Contact***/

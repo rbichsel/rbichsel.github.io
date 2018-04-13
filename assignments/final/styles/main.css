@@ -178,65 +178,6 @@ footer > p {
 
 
 
-/*****Home Page******/
-
-#town-article img {
-    width: 100%;
-}
-
-#town-info {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-
-}
-
-#town-info article {
-    width: 100%;
-    border: solid #114e74 4px;
-    margin-bottom: 2em;
-}
-
-#town-info h3 {
-    text-align: center;
-
-
-}
-
-.t-name {
-    color: #114e74;
-}
-
-#town-info p {
-
-    text-align: center;
-    margin: .6em;
-}
-
-#town-info h4 {
-    text-align: left;
-    margin-left: 1.2em;
-}
-
-#town-info ul {
-
-    text-align: left;
-    margin-top: 0;
-}
-
-#town-info h4 {
-    margin-bottom: .5em;
-}
-
-#town-info img {
-    margin-bottom: 3%;
-}
-
-
-.forecastFrank {
-    margin-top: 1em;
-}
-
 /**Sales**/
 #accordian ul { 
 margin: 0;
@@ -269,4 +210,61 @@ position: relative;}
     height: 50%;
     border: 1px solid black;
     
+}
+
+/***Events***/
+abbr {color:red}
+
+fieldset{
+  background-color: white;
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: black solid 2px; 
+    text-align: left;
+    max-width: 80%;
+    
+}
+
+legend {
+    color: black;
+    font-weight: bold;
+    margin-left: 6%;
+    padding: .3em;
+    border: #114e74 solid 5px;
+    background-color: white;
+    border-radius: .7em;  
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display:block;
+    font-size: 1em;
+    color: black;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+input.submitBtn {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #111;
+    border-radius: 7px;
+    width: 20%;
+    margin: .5em 0 1em;
+    font-size: 1em;
+    padding: .6em;
+    background-color: orangered;
+    box-shadow: 4px 4px 10px #666;
+    display: flex;
+    justify-content: center;
+    
+}
+
+textarea{
+    margin: 1em;
 }
