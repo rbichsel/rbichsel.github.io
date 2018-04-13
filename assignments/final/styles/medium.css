@@ -38,5 +38,13 @@
     #salesInfo {padding: 1em;
     text-align: left; }
     
-
+/*******Container*******/
+    #containerTours{
+        display: flex;
+        text-align: left;
+    }
+    
+    #containerTours h4 {
+        text-align: center;
+    }
 }

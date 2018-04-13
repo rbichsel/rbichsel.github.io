@@ -51,20 +51,31 @@
 
     <main>
         <h3>Cycle the Continental Divide</h3>
-        <p> The Great Divide Mountain Bike Route is the longest off-pavement route in the world. </p>
+        <p> The Great Divide Mountain Bike Route is the longest off-pavement route in the world. Bike from the top to the bottom of the United states in 3 weeks. This is a bike ride that all bike euthiasts need to experience. There's no better way to tour this beautiful country.</p>
+        
+        <p>Dates: July 15 - August 4, 2018</p>
+        
+        <p>Route: Banff, Alberta, Cananda to Antelope Wells, NM</p>
+        
+        <p>Costs: $700</p>
+        
+        <p>Requirements: Must provide own bike. Bring tire repair exquipmen. </p>
+        
+        
+        
+        <h3>Register Now!</h3>
        <form action="thanks.html">
-            <fieldset>
                 <fieldset>
                     <legend><span>Personal Information</span></legend>
 
                     <label><span>Full Name <abbr title="This field is mandatory">*</abbr>:</span><input name="name" type="text" value="" placeholder="John Doe" pattern="[a-zA-z -._]{3,50}" required></label>
 
-                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="example@gmail.com"></label>
+                    <label><span>Email <abbr title="This field is mandatory">*</abbr>:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
 
                     <label><span>Phone:</span><input name="phone" type="tell" placeholder="5554445555" pattern="[0-9]{10, 20}"></label>
                     
                     <label><span>Date of Birth</span></label>
-                    <input name="birthday" type="date">
+                    <input name="birthday" type="date" required>
                     
                     <label><span>Home State or Country</span></label>
                     <input name="home" type="text">
@@ -77,8 +88,7 @@
                 </fieldset>
 
                 <input type="submit" name="submit" value="Submit" class="submitBtn">
-                <input type="hidden" name="redirect" value="thanks.html">
-            </fieldset> 
+                <input type="hidden" name="redirect" value="thanks.html"> 
     </main>
 
     <footer>
