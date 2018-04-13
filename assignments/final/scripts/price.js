@@ -16,7 +16,7 @@ var section = document.getElementById("price1");
 
 
         function showInfo(jsonObj) {
-            var mnTowns = jsonObj['services'];
+            var mnTowns = jsonObj['towns'];
             mnTowns.splice(2,1);
 
             for (var i = 0; i < mnTowns.length; i++) {
@@ -33,14 +33,14 @@ var section = document.getElementById("price1");
                 myH3.classList.add("t-name");
             
                 
-                myH3.textContent = mnTowns[i].type;
-                myPara1.textContent = 'Motto: ' + mnTowns[i].details;
-                myPara2.textContent = 'Year Founded: ' + mnTowns[i].price;
-                myPara3.textContent = 'Current Population: ' + mnTowns[i].details;
-                myPara4.textContent = 'Average Rainfall: ' + mnTowns[i].details;
-                myH4.type = 'Events';
+                myH3.textContent = mnTowns[i].name;
+                myPara1.textContent = 'Motto: ' + mnTowns[i].motto;
+                myPara2.textContent = 'Year Founded: ' + mnTowns[i].yearFounded;
+                myPara3.textContent = 'Current Population: ' + mnTowns[i].currentPopulation;
+                myPara4.textContent = 'Average Rainfall: ' + mnTowns[i].averageRainfall;
+                myH4.textContent = 'Events';
                 
-                
+                myImg.src = "images/" + mnTowns[i].name + ".jpg";
                 
                 
 
