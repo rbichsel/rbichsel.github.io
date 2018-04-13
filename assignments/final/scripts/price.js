@@ -17,16 +17,13 @@ request.onload = function () {
 
 function showInfo(jsonObj) {
     var mnTowns = jsonObj['towns'];
-
-
-    for (var i = 0) {
-
+ 
         var myPara1 = document.createElement('p');
 
-        myPara1.textContent = 'Motto: ' + mnTowns[i].motto;
+        myPara1.textContent = mnTowns[0].motto;
 
         section.appendChild(myPara1);
 
 
-    }
+    
 }

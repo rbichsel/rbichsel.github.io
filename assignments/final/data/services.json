@@ -14,8 +14,8 @@
   },
   {
     "name": "Greenville",
-    "motto": "Green is our way of life.",
-    "yearFounded": 1805,
+    "motto": "150",
+    "yearFounded": "$150"
     "currentPopulation": 33458,
     "averageRainfall": 25,
     "events" : [
@@ -28,7 +28,7 @@
 
   {
     "name": "Placerton",
-    "motto": "Positive Placement in Placerton.",
+    "motto": "$50-300, depending on complexity",
     "yearFounded": 1946,
     "currentPopulation": 512,
     "averageRainfall": 39,
@@ -40,7 +40,7 @@
 
   {
     "name": "Springfield",
-    "motto": "Where everyone is lifted.",
+    "motto": "$2,000",
     "yearFounded": 1826,
     "currentPopulation": 17852,
     "averageRainfall": 17,
