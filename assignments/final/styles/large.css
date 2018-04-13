@@ -63,5 +63,9 @@
      .article-pic {
      
     }
+    /***Contact***/
+    .contactContainer {
+        display:flex;
+    }
     
 }
