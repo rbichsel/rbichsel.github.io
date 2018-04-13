@@ -68,4 +68,9 @@
         display:flex;
     }
     
+    .contactContainer .container {
+        padding-left: 3em;
+        width: 50%;
+    }
+    
 }

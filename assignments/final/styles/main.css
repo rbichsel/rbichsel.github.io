@@ -41,7 +41,7 @@ main {
 header {
     display: flex;
     justify-content: flex-start;
-    background-color:;
+    background-color:#8d8d92;
 
 }
 
@@ -132,7 +132,7 @@ td {
 }
 
 th {
-    background-color: orange;
+    background-color: 	#6B8E23;
 }
 
 .forecast {
@@ -176,83 +176,7 @@ footer > p {
     clear: both;
 }
 
-/********Gallery Page**********/
 
-.grid-container {
-    display: inline-grid;
-    grid-template-columns: 1fr;
-}
-
-/********Storm Center*********/
-
-abbr {
-    color: red
-}
-
-fieldset {
-    background-color: white;
-    border-radius: .8em;
-    margin: 1.5em 0;
-    border: black solid 2px;
-    text-align: left;
-    max-width: 80%;
-
-}
-
-legend {
-    color: black;
-    font-weight: bold;
-    margin-left: 6%;
-    padding: .3em;
-    border: #114e74 solid 5px;
-    background-color: white;
-    border-radius: .7em;
-    text-align: left;
-}
-
-label {
-    display: block;
-    margin: .5em;
-}
-
-label span {
-    display: block;
-    font-size: 1em;
-    color: black;
-    padding-top: .9em;
-    padding-bottom: .2em;
-}
-
-input.submitBtn {
-    -webkit-appearance: none;
-    color: #fff;
-    border: solid 1px #111;
-    border-radius: 7px;
-    width: 20%;
-    margin: .5em 0 1em;
-    font-size: 1em;
-    padding: .6em;
-    background-color: orangered;
-    box-shadow: 4px 4px 10px #666;
-    display: flex;
-    justify-content: center;
-
-}
-
-textarea {
-    margin: 1em;
-}
-
-/*****Thanks*****/
-
-.formsubmit {
-    display: flex;
-    height: 400px;
-}
-
-/****JSON****/
-
-.t-photo {}
 
 /*****Home Page******/
 
