@@ -138,16 +138,6 @@ th {
     background-color: 	#6B8E23;
 }
 
-.forecast {
-    display: none;
-}
-
-.current {
-    margin: auto;
-
-    max-width: 60%;
-}
-
 footer {
     text-align: center;
 }
@@ -282,4 +272,23 @@ textarea{
     margin: 1em;
 }
 
+ /****Contact Us****/
+    input.contactBtn {
+        -webkit-appearance: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 20%;
+    margin: 1em;
+    font-size: 1em;
+    padding: .6em;
+    background-color: olivedrab;
+    box-shadow: 4px 4px 10px #111;
+    display: flex;
+    justify-content: center;
+     
+    }
 
+#resources {
+    text-align: left;
+    line-height: 2em;
+}

@@ -73,6 +73,27 @@
     
     .contactContainer .container {
         padding-left: 3em;
+        width: 100%;
+    }
+
+    
+    input.contactBtn {
+        -webkit-appearance: none;
+    color: #fff;
+    border-radius: 7px;
+    width: 35%;
+    margin-left: 32%;
+    font-size: 1em;
+    padding: 1em;
+    background-color: olivedrab;
+    box-shadow: 4px 4px 10px #111;
+    display: flex;
+    justify-content: center;
+     
+    }
+    
+    iframe {
+       margin-left: 10%;
         width: 50%;
     }
     
@@ -103,15 +124,19 @@
     .container2 {
         display: flex;
         flex-wrap:wrap;
-        flex-direction: row; 
+        flex-direction: row;
     }
     #salesPic {
-       width: 50%;
+       width: 40%;
     margin-right: 10%;
     }
     
     #accordian {
         margin-top: 5%;
         margin-bottom: 5%;
+        margin-right: 0;
+        margin-left: 0;
     }
+    
+    
 }
