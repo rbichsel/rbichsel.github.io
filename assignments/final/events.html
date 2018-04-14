@@ -13,16 +13,16 @@
 
     <link href="styles/normalize.css" rel="stylesheet">
     <link href="styles/main.css" rel="stylesheet">
-    
+
     <link href="styles/medium.css" rel="stylesheet">
-    
+
     <link href="styles/large.css" rel="stylesheet">
-    
-    
+
+
 </head>
 
 <body>
-    
+
     <div class="bar"></div>
     <header>
         <div class="flex-item1">
@@ -34,11 +34,11 @@
         </div>
 
     </header>
-    
 
-   <nav id="navigation">
-       <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
-       
+
+    <nav id="navigation">
+        <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
         <ul id="primNav" class="hide">
             <li><a href="index.html">Home</a></li>
             <li><a href="tours.html">Tours</a></li>
@@ -54,44 +54,44 @@
         <img src="images/bikers-landscape.jpeg" alt="beautiful landscape with bikers">
         <h3>Cycle the Continental Divide</h3>
         <p> The Great Divide Mountain Bike Route is the longest off-pavement route in the world. Bike from the top to the bottom of the United states in 3 weeks. This is a bike ride that all bike euthiasts need to experience. There's no better way to tour this beautiful country.</p>
-        
+
         <div id="eventInfo">
-        <p><strong>Dates:</strong> July 15 - August 4, 2018</p>
-        
-        <p><strong>Route:</strong> Banff, Alberta, Cananda to Antelope Wells, NM</p>
-        
-        <p><strong>Costs:</strong> $700</p>
-        
-        <p><strong>Requirements:</strong> Must provide own bike. Bring tire repair exquipmen. </p>
+            <p><strong>Dates:</strong> July 15 - August 4, 2018</p>
+
+            <p><strong>Route:</strong> Banff, Alberta, Cananda to Antelope Wells, NM</p>
+
+            <p><strong>Costs:</strong> $700</p>
+
+            <p><strong>Requirements:</strong> Must provide own bike. Bring tire repair exquipmen. </p>
         </div>
-        
-        
+
+
         <h3>Register Now!</h3>
-       <form id="eventReg" action="thanks.html">
-                <fieldset>
-                    <legend><span>Personal Information</span></legend>
+        <form id="eventReg" action="thanks.html">
+            <fieldset>
+                <legend><span>Personal Information</span></legend>
 
-                    <label><span>Full Name <abbr title="This field is mandatory">*</abbr>:</span><input name="name" type="text" value="" placeholder="John Doe" pattern="[a-zA-z -._]{3,50}" required></label>
+                <label><span>Full Name <abbr title="This field is mandatory">*</abbr>:</span><input name="name" type="text" value="" placeholder="John Doe" pattern="[a-zA-z -._]{3,50}" required></label>
 
-                    <label><span>Email <abbr title="This field is mandatory">*</abbr>:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
+                <label><span>Email <abbr title="This field is mandatory">*</abbr>:</span><input name="email" type="email" value="" placeholder="example@gmail.com" required></label>
 
-                    <label><span>Phone:</span><input name="phone" type="tel" placeholder="5554445555" pattern="[0-9]{10, 20}"></label>
-                    
-                    <label><span>Date of Birth</span></label>
-                    <input name="birthday" type="date" required>
-                    
-                    <label><span>Home State or Country</span></label>
-                    <input name="home" type="text">
+                <label><span>Phone:</span><input name="phone" type="tel" placeholder="5554445555" pattern="[0-9]{10, 20}"></label>
 
-                </fieldset>
+                <label><span>Date of Birth</span></label>
+                <input name="birthday" type="date" required>
 
-                <fieldset>
-                    <legend><span>Special Accommadations/Comments</span></legend>
-                    <textarea name="comments" rows="10" cols="40"></textarea>
-                </fieldset>
+                <label><span>Home State or Country</span></label>
+                <input name="home" type="text">
 
-                <input type="submit" name="submit" value="Submit" class="submitBtn">
-                <input type="hidden" name="redirect" value="thanks.html"> 
+            </fieldset>
+
+            <fieldset>
+                <legend><span>Special Accommadations/Comments</span></legend>
+                <textarea name="comments" rows="10" cols="40"></textarea>
+            </fieldset>
+
+            <input type="submit" name="submit" value="Submit" class="submitBtn">
+            <input type="hidden" name="redirect" value="thanks.html">
         </form>
     </main>
 
@@ -99,15 +99,15 @@
         <aside>
             The Mountain Spoke <br>3950 Valley Commons Dr. <br> Bozeman, MT 83454 <br> 252-555-999 <br> contact@mountainspoke.com
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">
-            </span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | <a class="video" href="video.html">Overview Video</a> | <a class="video" href="resource.html">Resources</a> | <span id="currentdate">
+            </span> </p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/current-menu.js"></script>
 
-     
+
 
 </body>
 
