@@ -99,8 +99,19 @@
         margin-left: 40%;
     }
     
-/*****Services******/
-    table {
-        
+/*****Sales*****/
+    .container2 {
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction: row; 
+    }
+    #salesPic {
+       width: 50%;
+    margin-right: 10%;
+    }
+    
+    #accordian {
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
 }

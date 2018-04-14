@@ -178,6 +178,8 @@ footer > p {
 
 
 /**Sales**/
+
+
 #accordian ul { 
 margin: 0;
 padding: 0;
@@ -201,12 +203,12 @@ position: relative;}
 }
 
 #accordian h3:hover{
-    color: navajowhite;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 #accordian ul li {
     background-color: olivedrab;
-    height: 50%;
+    height: 60%;
     border: 1px solid black;
     
 }

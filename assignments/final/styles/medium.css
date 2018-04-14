@@ -25,11 +25,13 @@
     /********Sales*******/
     .container2 {
         display: flex;
+        flex-wrap: wrap;
     }
 
     #accordian {
-        width: 200%;
-        max-width: 300px;
+        max-width: 400px;
+        margin-left: 27%;
+        margin-right: 27%;
     }
 
 
@@ -37,7 +39,8 @@
         padding: 1em;
         text-align: left;
     }
-
+    
+    
     /*******tours*******/
     #containerTours {
         display: flex;
